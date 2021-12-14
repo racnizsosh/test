@@ -11,6 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Finapp HTML Mobile Template">
     <meta name="keywords" content="bootstrap, mobile template, cordova, phonegap, mobile, html, responsive" />
+
+  <script src="js/main.js" defer></script>
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
     <link rel="shortcut icon" href="assets/img/favicon.png">
@@ -48,11 +50,22 @@
             <h4>Fill the form to register</h4>
         </div>
         <div class="section mt-2 mb-5 p-3">
-            <form action="https://egemem.com/theme/finapp/view/app-index.html">
+<!--            <form action="https://egemem.com/theme/finapp/view/app-index.html">-->
+            <form id="user-register">
+                <div class="form-group basic">
+                    <div class="input-wrapper">
+                        <label class="label" for="email1">Nome</label>
+                        <input class="form-control" id="name1" name="name" placeholder="Nome">
+                        <i class="clear-input">
+                            <ion-icon name="close-circle"></ion-icon>
+                        </i>
+                    </div>
+                </div>
+
                 <div class="form-group basic">
                     <div class="input-wrapper">
                         <label class="label" for="email1">E-mail</label>
-                        <input type="email" class="form-control" id="email1" placeholder="Your e-mail">
+                        <input type="email" class="form-control" id="email1" name="email" placeholder="Email">
                         <i class="clear-input">
                             <ion-icon name="close-circle"></ion-icon>
                         </i>
@@ -61,8 +74,8 @@
 
                 <div class="form-group basic">
                     <div class="input-wrapper">
-                        <label class="label" for="password1">Password</label>
-                        <input type="password" class="form-control" id="password1" placeholder="Your password">
+                        <label class="label" for="password1">Senha</label>
+                        <input type="password" class="form-control" id="password1" name="password" placeholder="Senha">
                         <i class="clear-input">
                             <ion-icon name="close-circle"></ion-icon>
                         </i>
@@ -71,8 +84,8 @@
 
                 <div class="form-group basic">
                     <div class="input-wrapper">
-                        <label class="label" for="password2">Password Again</label>
-                        <input type="password" class="form-control" id="password2" placeholder="Type password again">
+                        <label class="label" for="password2">Confirme sua senha</label>
+                        <input type="password" class="form-control" id="password2" placeholder="Digite sua senha novamente">
                         <i class="clear-input">
                             <ion-icon name="close-circle"></ion-icon>
                         </i>
