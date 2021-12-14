@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
   const callback = (e) => {
     e.preventDefault();
-    alert('as');
     const formData = new FormData(elem);
     console.log(formData);
     console.log(formData.get('email1'));
