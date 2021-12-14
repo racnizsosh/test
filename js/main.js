@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function(){
         console.log(result);
         const body = JSON.parse(result);
         if (body.message === 'success') alert('Conta criada com sucesso!');
-        window.location.href = '/html/app-login.html';
+        window.location.href = '/test/app-login.html';
       })
       .catch(error => console.log('error', error));
   }
